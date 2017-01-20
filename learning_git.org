@@ -85,3 +85,5 @@ This file is for practicing using git and github with a mock project,
 - ~git remote show [remote-name]~
 - ~git remote rename [old-remote-name] [new-remote-name]~
 - ~git remote rm [remote-name]~
+
+* Git Branching
