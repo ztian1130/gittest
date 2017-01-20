@@ -1,0 +1,76 @@
+#+TITLE: Practice on Git and Github
+#+AUTHOR: Zheng Tian
+#+EMAIL: zngtian@gmail.com
+#+DATE: [2017-01-20 Fri]
+#+OPTIONS: H:3 num:2 toc:nil
+
+* Introduction
+
+This file is for practicing using git and github with a mock project,
+"gittest". I'll follow chapters in /Pro Git/.
+
+
+* Git Basics
+
+** Git configuration
+
+- Use ~git config --list~
+- ~git config --global user.name "Zheng Tian"~
+- ~git config --global user.email "zt@example.com"~
+
+** Get help
+
+- ~git help <verb>~ or ~git <verb> --help~
+
+** Create a git repository
+
+- Use ~git init~
+- Use ~git clone URL <name>~
+
+** Check status
+
+- ~git status~
+- ~git diff~
+- ~git diff --staged~
+
+** Stage files and changes
+
+- ~git add <filename>~
+- ~git add -A~
+- ~git add .~
+
+** Commit
+
+- ~git commit -m "message"~
+- ~git commit -a -m "message"~: skip the staging area
+
+** Remove files
+
+- ~git rm filename~: remove the file from both working directory and
+  staging area.
+- ~git rm --cached file~: remove the file only from the staging area
+  not in working directory.
+
+** Move and rename file
+
+- ~git mv file_from file_to~: file_from must have been staged.
+
+** View commit history
+
+- ~git log~
+- ~git log -p -2~: show the difference (-p) of the last two commits
+- ~git log --pretty=format:"%h %s" --graph~: show commit history in a
+  pretty format with a tree-like graph.
+- ~git log --since="2008-01-15"~
+
+** Undoing things
+
+- ~git commit --amend~
+
+** Unstaging a staged file
+
+- ~git reset HEAD file~
+
+** Unmodifying a modified file
+
+- ~git checkout -- file~
