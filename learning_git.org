@@ -73,4 +73,15 @@ This file is for practicing using git and github with a mock project,
 
 ** Unmodifying a modified file
 
-- ~git checkout -- file~
+- ~git checkout -- file~.
+
+** Working with remote
+
+- ~git remote -v~ show all remote repository with URL
+- ~git remote add [remote-name] URL~ add a remote with a short name ~pb~.
+- ~git fetch [remote-name]~ only download data not merge.
+- ~git pull~ fetch and merge
+- ~git push [remote-name] [branch-name]~
+- ~git remote show [remote-name]~
+- ~git remote rename [old-remote-name] [new-remote-name]~
+- ~git remote rm [remote-name]~
