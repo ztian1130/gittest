@@ -86,4 +86,78 @@ This file is for practicing using git and github with a mock project,
 - ~git remote rename [old-remote-name] [new-remote-name]~
 - ~git remote rm [remote-name]~
 
+
 * Git Branching
+
+** Create and switch branch
+
+- ~git branch [branch-name]~
+- ~git checkout [branch-name]~: commit and have a clean branch before
+  switching or do stashing.
+- ~git checkout -b [branch-name]~: create a branch and switch.
+- ~git log --oneline --decorate --graph --all~: print out the history
+  of committing and branching.
+
+** Merge
+
+- ~git merge [branch-name]~.
+  - fast-forward merge
+  - recursive merge
+- ~git branch -d [branch-name]~ delete the merged and unused branch.
+
+** Merge conflicts
+
+- Merge conflicts happens when two branches have work on the same
+  lines of a file.
+- Use ~git status~ to check the conflicting file(s).
+- Modify the conflicts manually.
+- Or use ~git mergetool~
+
+** Branch management
+
+What follows is one typical workflow with branches:
+- The long-live (master) branch: the most stable branch.
+  - The developing branch(es): less stable than master, but use it to
+    track on-going work in one or more main directions of a project.
+    - The topic branch(es): the short-live branches for solving very
+      specific problems.
+
+- ~git branch -v~ see the latest commit in each branch.
+- ~git branch --merged~ or ~git branch --no-merged~ show branches that
+  have been merged or haven't.
+
+** Remote branch
+
+- ~git ls-remote [remote-name]~ and ~git remote show [remote-name]~
+  show the list of remote(s) and other information.
+- ~git fetch [remote-name] <refs:branches or tags>~ download the data
+  from the remote into a local directory
+  ~[remote-name]/[branch-name]~, but this directory is not
+  workable. To work on it, do merging, ~git merge [remote]/[branch]~.
+- Use ~git checkout -b [local-branch] [remote-name]/[branch-name]~ to
+  create a local branch that can be worked on and track the remote
+  branch.
+
+** Tracking branch
+
+- Tracking branches are local branches that track upstream remote
+  branch.
+- ~git clone~ automatically generate a tracking branch ~origin/master~
+- Use ~git checkout -b [local-branch] [remote]/[branch]~ to create a
+  tracking branch for a specific remote branch.
+- ~git checkout --track [remote]/[branch]~ is a shorthand for the
+  command above.
+- ~git branch -u [remote]/[branch]~ or ~git branch --set-upstream-to
+  [remote]/[branch]~ to set up a remote upstream branch.
+- ~git branch -vv~ list local branches with their tracking branches.
+
+** Pulling
+
+- ~git pull~ is ~git fetch~ + ~git merge~.
+- Better to use fetch and merge separately to avoid confusing.
+
+** Delete remote branches
+
+- ~git push [remote] --delete [branch]~
+
+** TODO Rebasing
