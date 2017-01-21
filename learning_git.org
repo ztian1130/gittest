@@ -138,6 +138,17 @@ What follows is one typical workflow with branches:
   create a local branch that can be worked on and track the remote
   branch.
 
+** Pushing
+
+- ~git push [remote] [branch]~
+- ~git push [remote] [branch]:[new-branchname]~ to give the remote
+  branch a different name.
+- If the remote branch does not exits, git suggest using ~git push -u
+  [remote] [branch]~ or ~git push --set-upstream [remote]
+  [branch]~. This action triggers a pull request in github, from which
+  I can choose to merge the remote branch to the existing remote
+  master branch.
+
 ** Tracking branch
 
 - Tracking branches are local branches that track upstream remote
