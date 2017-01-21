@@ -17,6 +17,7 @@ abline(fit, lwd = 2)
 The slope of a simple linear regression can be extracted using the
 following code `r coef(fit)[2]`.
 
+
 ## Examples in Chapter 5
 
 ```{r eval=2, tidy=TRUE, comment=NA, size='Large', prompt=FALSE}
