@@ -148,7 +148,10 @@ What follows is one typical workflow with branches:
 - ~git checkout --track [remote]/[branch]~ is a shorthand for the
   command above.
 - ~git branch -u [remote]/[branch]~ or ~git branch --set-upstream-to
-  [remote]/[branch]~ to set up a remote upstream branch.
+  [remote]/[branch]~ to set up a remote upstream branch. This is
+  working when the remote upstream branch exists.
+- If not, use ~git push -u [remote] [branch]~ to set up a remote
+  branch, which is automatically set as the local tracking branch.
 - ~git branch -vv~ list local branches with their tracking branches.
 
 ** Pulling
