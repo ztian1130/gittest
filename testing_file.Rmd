@@ -13,9 +13,9 @@ plot(cars, pch = 20, col ='darkgray' )
 fit <- lm(dist ~ speed, data = cars)
 abline(fit, lwd = 2)
 ```
-The slope of a simple linear regression can be extract using the
-following code
-`r coef(fit)[2]`.
+
+The slope of a simple linear regression can be extracted using the
+following code `r coef(fit)[2]`.
 
 ## Examples in Chapter 5
 
