@@ -13,7 +13,7 @@ plot(cars, pch = 20, col ='darkgray' )
 fit <- lm(dist ~ speed, data = cars)
 abline(fit, lwd = 2)
 ```
-The slope of a simple linear regression is
+The slope of a simple linear regression is estimated as
 `r coef(fit)[2]`.
 
 ## Examples in Chapter 5
