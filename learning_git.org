@@ -175,3 +175,29 @@ What follows is one typical workflow with branches:
 - ~git push [remote] --delete [branch]~
 
 ** TODO Rebasing
+
+*** Basic rebase
+A typical workflow: See Figures 3-27 to 3-30
+1. ~git checkout [topicbranch]~
+2. ~git rebase [basebranch]~
+3. ~git checkout [basebranch]~
+4. ~git merge [topicbranch]~
+
+*** The perils of rebasing
+
+*Do not rebase commits that exist outside your repository.*
+Excerpt From: Scott Chacon, Ben Straub. “Pro Git.” iBooks. 
+
+*** Rebase vs. Merge
+
+Which is better, rebase or merge, depends on how you view the commit
+history. 
+- Review 1 :: a record of what actually happened. This view value the
+              intact of the committing history, preferring merging to
+              rebasing.
+- Review 2 :: story of how your project was made. Rebasing is like
+              manipulating history but it is OK according to this
+              view. 
+
+
+
