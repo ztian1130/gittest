@@ -39,3 +39,7 @@ str(cars)
 ```{r echo = TRUE, include = TRUE}
 summary(cars)
 ```
+
+```{r echo = TRUE}
+head(cars)
+```
