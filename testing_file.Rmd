@@ -31,3 +31,7 @@ b <- coef(lm(dist ~ speed, data = cars))
 cat(sprintf("$dist = %.02f + %.02f speed$", b[1], b[2]))
 ```
 
+## Another another headeline
+```{r}
+str(cars)
+```
