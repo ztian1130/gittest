@@ -1,6 +1,8 @@
 ---
 title: "A Minimal Example"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 We examine the relationship between speed and stopping
@@ -18,7 +20,7 @@ The slope of a simple linear regression can be extracted using the
 following code `r coef(fit)[2]`.
 
 
-## Examples in Chapter 5
+# Examples in Chapter 5
 
 ```{r eval=2, tidy=TRUE, comment=NA, size='Large', prompt=FALSE}
 1+1
@@ -30,7 +32,6 @@ b <- coef(lm(dist ~ speed, data = cars))
 # write out the regression equation
 cat(sprintf("$dist = %.02f + %.02f speed$", b[1], b[2]))
 ```
-## Add another headline
 
 ```r
 str(cars)
@@ -43,3 +44,17 @@ summary(cars)
 ```{r echo = TRUE}
 head(cars)
 ```
+
+## Examples in Chapter 6
+
+Try optios for show/hide output text
+
+```{r echo=TRUE, results='asis'}
+b <- coef(lm(dist ~ speed, data = cars))
+cat(sprintf("$dist = %.02f + %.02f speed$", b[1], b[2]))
+```
+
+
+
+
+
