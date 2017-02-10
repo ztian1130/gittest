@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-02-09 Thu 21:54 -->
+<!-- 2017-02-09 Thu 21:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>INDEX</title>
+<title>INDEX Practice on Git and Github</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Zheng Tian" />
 <style type="text/css">
@@ -239,18 +239,381 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">INDEX</h1>
+<h1 class="title">INDEX Practice on Git and Github</h1>
 <p>
 My page include this <a href="learning_git.html">learning_git.html</a>.
 </p>
 
+<div id="outline-container-orgc2a2a27" class="outline-2">
+<h2 id="orgc2a2a27"><span class="section-number-2">1</span> The learning notes</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+
+<div id="outline-container-org058544f" class="outline-3">
+<h3 id="org058544f"><span class="section-number-3">1.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
-The link is <a href="https://zngtian.github.io/gittest/">https://zngtian.github.io/gittest/</a>.
+This file is for practicing using git and github with a mock project,
+"gittest". I'll follow chapters in <i>Pro Git</i>.
 </p>
 </div>
+</div>
+
+
+<div id="outline-container-orgd3f7382" class="outline-3">
+<h3 id="orgd3f7382"><span class="section-number-3">1.2</span> Git Basics</h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-orgbeda543" class="outline-4">
+<h4 id="orgbeda543">Git configuration</h4>
+<div class="outline-text-4" id="text-orgbeda543">
+<ul class="org-ul">
+<li>Use <code>git config --list</code></li>
+<li><code>git config --global user.name "Zheng Tian"</code></li>
+<li><code>git config --global user.email "zt@example.com"</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org62195de" class="outline-4">
+<h4 id="org62195de">Get help</h4>
+<div class="outline-text-4" id="text-org62195de">
+<ul class="org-ul">
+<li><code>git help &lt;verb&gt;</code> or <code>git &lt;verb&gt; --help</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6d8bb85" class="outline-4">
+<h4 id="org6d8bb85">Create a git repository</h4>
+<div class="outline-text-4" id="text-org6d8bb85">
+<ul class="org-ul">
+<li>Use <code>git init</code></li>
+<li>Use <code>git clone URL &lt;name&gt;</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbbfb9f8" class="outline-4">
+<h4 id="orgbbfb9f8">Check status</h4>
+<div class="outline-text-4" id="text-orgbbfb9f8">
+<ul class="org-ul">
+<li><code>git status</code></li>
+<li><code>git diff</code></li>
+<li><code>git diff --staged</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4497605" class="outline-4">
+<h4 id="org4497605">Stage files and changes</h4>
+<div class="outline-text-4" id="text-org4497605">
+<ul class="org-ul">
+<li><code>git add &lt;filename&gt;</code></li>
+<li><code>git add -A</code></li>
+<li><code>git add .</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3e4ba50" class="outline-4">
+<h4 id="org3e4ba50">Commit</h4>
+<div class="outline-text-4" id="text-org3e4ba50">
+<ul class="org-ul">
+<li><code>git commit -m "message"</code></li>
+<li><code>git commit -a -m "message"</code>: skip the staging area</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org34a12cc" class="outline-4">
+<h4 id="org34a12cc">Remove files</h4>
+<div class="outline-text-4" id="text-org34a12cc">
+<ul class="org-ul">
+<li><code>git rm filename</code>: remove the file from both working directory and
+staging area.</li>
+<li><code>git rm --cached file</code>: remove the file only from the staging area
+not in working directory.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgea00e8f" class="outline-4">
+<h4 id="orgea00e8f">Move and rename file</h4>
+<div class="outline-text-4" id="text-orgea00e8f">
+<ul class="org-ul">
+<li><code>git mv file_from file_to</code>: file<sub>from</sub> must have been staged.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcd4806d" class="outline-4">
+<h4 id="orgcd4806d">View commit history</h4>
+<div class="outline-text-4" id="text-orgcd4806d">
+<ul class="org-ul">
+<li><code>git log</code></li>
+<li><code>git log -p -2</code>: show the difference (-p) of the last two commits</li>
+<li><code>git log --pretty=format:"%h %s" --graph</code>: show commit history in a
+pretty format with a tree-like graph.</li>
+<li><code>git log --since="2008-01-15"</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org566b622" class="outline-4">
+<h4 id="org566b622">Undoing things</h4>
+<div class="outline-text-4" id="text-org566b622">
+<ul class="org-ul">
+<li><code>git commit --amend</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdf3a4dd" class="outline-4">
+<h4 id="orgdf3a4dd">Unstaging a staged file</h4>
+<div class="outline-text-4" id="text-orgdf3a4dd">
+<ul class="org-ul">
+<li><code>git reset HEAD file</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf35046e" class="outline-4">
+<h4 id="orgf35046e">Unmodifying a modified file</h4>
+<div class="outline-text-4" id="text-orgf35046e">
+<ul class="org-ul">
+<li><code>git checkout -- file</code>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc304133" class="outline-4">
+<h4 id="orgc304133">Working with remote</h4>
+<div class="outline-text-4" id="text-orgc304133">
+<ul class="org-ul">
+<li><code>git remote -v</code> show all remote repository with URL</li>
+<li><code>git remote add [remote-name] URL</code> add a remote with a short name <code>pb</code>.</li>
+<li><code>git fetch [remote-name]</code> only download data not merge.</li>
+<li><code>git pull</code> fetch and merge</li>
+<li><code>git push [remote-name] [branch-name]</code></li>
+<li><code>git remote show [remote-name]</code></li>
+<li><code>git remote rename [old-remote-name] [new-remote-name]</code></li>
+<li><code>git remote rm [remote-name]</code></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org9f62780" class="outline-3">
+<h3 id="org9f62780"><span class="section-number-3">1.3</span> Git Branching</h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-org2616ec5" class="outline-4">
+<h4 id="org2616ec5">Create and switch branch</h4>
+<div class="outline-text-4" id="text-org2616ec5">
+<ul class="org-ul">
+<li><code>git branch [branch-name]</code></li>
+<li><code>git checkout [branch-name]</code>: commit and have a clean branch before
+switching or do stashing.</li>
+<li><code>git checkout -b [branch-name]</code>: create a branch and switch.</li>
+<li><code>git log --oneline --decorate --graph --all</code>: print out the history
+of committing and branching.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org988a3d5" class="outline-4">
+<h4 id="org988a3d5">Merge</h4>
+<div class="outline-text-4" id="text-org988a3d5">
+<ul class="org-ul">
+<li><code>git merge [branch-name]</code>.
+<ul class="org-ul">
+<li>fast-forward merge</li>
+<li>recursive merge</li>
+</ul></li>
+<li><code>git branch -d [branch-name]</code> delete the merged and unused branch.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org89dd0c4" class="outline-4">
+<h4 id="org89dd0c4">Merge conflicts</h4>
+<div class="outline-text-4" id="text-org89dd0c4">
+<ul class="org-ul">
+<li>Merge conflicts happens when two branches have work on the same
+lines of a file.</li>
+<li>Use <code>git status</code> to check the conflicting file(s).</li>
+<li>Modify the conflicts manually.</li>
+<li>Or use <code>git mergetool</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge826ecb" class="outline-4">
+<h4 id="orge826ecb">Branch management</h4>
+<div class="outline-text-4" id="text-orge826ecb">
+<p>
+What follows is one typical workflow with branches:
+</p>
+<ul class="org-ul">
+<li>The long-live (master) branch: the most stable branch.
+<ul class="org-ul">
+<li>The developing branch(es): less stable than master, but use it to
+track on-going work in one or more main directions of a project.
+<ul class="org-ul">
+<li>The topic branch(es): the short-live branches for solving very
+specific problems.</li>
+</ul></li>
+</ul></li>
+
+<li><code>git branch -v</code> see the latest commit in each branch.</li>
+<li><code>git branch --merged</code> or <code>git branch --no-merged</code> show branches that
+have been merged or haven't.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7bdb558" class="outline-4">
+<h4 id="org7bdb558">Remote branch</h4>
+<div class="outline-text-4" id="text-org7bdb558">
+<ul class="org-ul">
+<li><code>git ls-remote [remote-name]</code> and <code>git remote show [remote-name]</code>
+show the list of remote(s) and other information.</li>
+<li><code>git fetch [remote-name] &lt;refs:branches or tags&gt;</code> download the data
+from the remote into a local directory
+<code>[remote-name]/[branch-name]</code>, but this directory is not
+workable. To work on it, do merging, <code>git merge [remote]/[branch]</code>.</li>
+<li>Use <code>git checkout -b [local-branch] [remote-name]/[branch-name]</code> to
+create a local branch that can be worked on and track the remote
+branch.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org641732a" class="outline-4">
+<h4 id="org641732a">Pushing</h4>
+<div class="outline-text-4" id="text-org641732a">
+<ul class="org-ul">
+<li><code>git push [remote] [branch]</code></li>
+<li><code>git push [remote] [branch]:[new-branchname]</code> to give the remote
+branch a different name.</li>
+<li>If the remote branch does not exits, git suggest using <code>git push -u
+  [remote] [branch]</code> or <code>git push --set-upstream [remote]
+  [branch]</code>. This action triggers a pull request in github, from which
+I can choose to merge the remote branch to the existing remote
+master branch.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org447a7b8" class="outline-4">
+<h4 id="org447a7b8">Tracking branch</h4>
+<div class="outline-text-4" id="text-org447a7b8">
+<ul class="org-ul">
+<li>Tracking branches are local branches that track upstream remote
+branch.</li>
+<li><code>git clone</code> automatically generate a tracking branch <code>origin/master</code></li>
+<li>Use <code>git checkout -b [local-branch] [remote]/[branch]</code> to create a
+tracking branch for a specific remote branch.</li>
+<li><code>git checkout --track [remote]/[branch]</code> is a shorthand for the
+command above.</li>
+<li><code>git branch -u [remote]/[branch]</code> or <code>git branch --set-upstream-to
+  [remote]/[branch]</code> to set up a remote upstream branch. This is
+working when the remote upstream branch exists.</li>
+<li>If not, use <code>git push -u [remote] [branch]</code> to set up a remote
+branch, which is automatically set as the local tracking branch.</li>
+<li><code>git branch -vv</code> list local branches with their tracking branches.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcb47597" class="outline-4">
+<h4 id="orgcb47597">Pulling</h4>
+<div class="outline-text-4" id="text-orgcb47597">
+<ul class="org-ul">
+<li><code>git pull</code> is <code>git fetch</code> + <code>git merge</code>.</li>
+<li>Better to use fetch and merge separately to avoid confusing.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc181361" class="outline-4">
+<h4 id="orgc181361">Delete remote branches</h4>
+<div class="outline-text-4" id="text-orgc181361">
+<ul class="org-ul">
+<li><code>git push [remote] --delete [branch]</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd052329" class="outline-4">
+<h4 id="orgd052329">Rebasing</h4>
+<div class="outline-text-4" id="text-orgd052329">
+</div><ul class="org-ul"><li><a id="orgce3d571"></a>Basic rebase<br  /><div class="outline-text-5" id="text-orgce3d571">
+<p>
+A typical workflow: See Figures 3-27 to 3-30
+</p>
+<ol class="org-ol">
+<li><code>git checkout [topicbranch]</code></li>
+<li><code>git rebase [basebranch]</code></li>
+<li><code>git checkout [basebranch]</code></li>
+<li><code>git merge [topicbranch]</code></li>
+</ol>
+</div></li>
+
+<li><a id="org2bc4bfb"></a>The perils of rebasing<br  /><div class="outline-text-5" id="text-org2bc4bfb">
+<p>
+<b>Do not rebase commits that exist outside your repository.</b>
+Excerpt From: Scott Chacon, Ben Straub. “Pro Git.” iBooks.
+</p>
+</div></li>
+
+<li><a id="org84e86e4"></a>Rebase vs. Merge<br  /><div class="outline-text-5" id="text-org84e86e4">
+<p>
+Which is better, rebase or merge, depends on how you view the commit
+history.
+</p>
+<dl class="org-dl">
+<dt>Review 1</dt><dd>a record of what actually happened. This view value the
+intact of the committing history, preferring merging to
+rebasing.</dd>
+<dt>Review 2</dt><dd>story of how your project was made. Rebasing is like
+manipulating history but it is OK according to this
+view.</dd>
+</dl>
+</div></li></ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org43a996e" class="outline-3">
+<h3 id="org43a996e"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Git server</h3>
+</div>
+
+<div id="outline-container-orge22893e" class="outline-3">
+<h3 id="orge22893e"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Distributed Git</h3>
+</div>
+
+<div id="outline-container-org5804343" class="outline-3">
+<h3 id="org5804343"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> Github</h3>
+</div>
+
+<div id="outline-container-orga71395a" class="outline-3">
+<h3 id="orga71395a"><span class="section-number-3">1.7</span> <span class="todo TODO">TODO</span> Git tools</h3>
+<div class="outline-text-3" id="text-1-7">
+</div><div id="outline-container-org24f7d27" class="outline-4">
+<h4 id="org24f7d27"><span class="todo TODO">TODO</span> Stashing and cleaning</h4>
+</div>
+<div id="outline-container-org133ebf7" class="outline-4">
+<h4 id="org133ebf7"><span class="todo TODO">TODO</span> Reset demystified</h4>
+</div>
+</div>
+</div>
+</div>
 <div id="postamble" class="status">
+<p class="date">Date: 2017-01-20 Fri 00:00</p>
 <p class="author">Author: Zheng Tian</p>
-<p class="date">Created: 2017-02-09 Thu 21:54</p>
+<p class="date">Created: 2017-02-09 Thu 21:57</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

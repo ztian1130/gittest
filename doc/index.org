@@ -3,4 +3,6 @@
 
 My page include this [[file:learning_git.org]].
 
-The link is https://zngtian.github.io/gittest/.
+* The learning notes
+
+#+INCLUDE: learning_git.org
