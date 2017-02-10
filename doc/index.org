@@ -1,7 +1,6 @@
-#+TITLE: INDEX
-#+SETUPFILE: theme-bigblow.setup
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/worg.css" />
 
-My page include this [[file:learning_git.org]].
+# #+SETUPFILE: theme-bigblow.setup
 
 * The learning notes
 
