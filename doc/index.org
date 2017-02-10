@@ -1,7 +1,10 @@
+#+OPTIONS: toc:t
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/worg.css" />
 
 # #+SETUPFILE: theme-bigblow.setup
 
 * The learning notes
 
-#+INCLUDE: learning_git.org
+[[file:learning_git.org]]
+
+# #+INCLUDE: learning_git.org
