@@ -1,0 +1,3 @@
+#+TITLE: INDEX
+
+My page include this [[file:learning_git.org]]. 
