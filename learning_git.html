@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-02-09 Thu 22:19 -->
+<!-- 2017-02-09 Thu 22:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Practice on Git and Github</title>
@@ -179,7 +179,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="css/worg.css" />
+<link rel="stylesheet" type="text/css" href="css/readtheorg.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -234,51 +234,51 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbaefe4d">1. Introduction</a></li>
-<li><a href="#org0df8b72">2. Git Basics</a>
+<li><a href="#orge31cf7a">1. Introduction</a></li>
+<li><a href="#org6c37406">2. Git Basics</a>
 <ul>
-<li><a href="#org76b040e">2.1. Git configuration</a></li>
-<li><a href="#org1f72b35">2.2. Get help</a></li>
-<li><a href="#orgcba59cb">2.3. Create a git repository</a></li>
-<li><a href="#org2683af5">2.4. Check status</a></li>
-<li><a href="#orgb92413b">2.5. Stage files and changes</a></li>
-<li><a href="#org8becb03">2.6. Commit</a></li>
-<li><a href="#orga6a0d99">2.7. Remove files</a></li>
-<li><a href="#org9500975">2.8. Move and rename file</a></li>
-<li><a href="#orgee433d9">2.9. View commit history</a></li>
-<li><a href="#orgfc8721b">2.10. Undoing things</a></li>
-<li><a href="#org5e23122">2.11. Unstaging a staged file</a></li>
-<li><a href="#orgb3ea65f">2.12. Unmodifying a modified file</a></li>
-<li><a href="#orga58978a">2.13. Working with remote</a></li>
+<li><a href="#org33fccdf">2.1. Git configuration</a></li>
+<li><a href="#org0884583">2.2. Get help</a></li>
+<li><a href="#orgd5db534">2.3. Create a git repository</a></li>
+<li><a href="#orgbff22c5">2.4. Check status</a></li>
+<li><a href="#org1761f3e">2.5. Stage files and changes</a></li>
+<li><a href="#org0088b34">2.6. Commit</a></li>
+<li><a href="#org5f84764">2.7. Remove files</a></li>
+<li><a href="#org7073db7">2.8. Move and rename file</a></li>
+<li><a href="#orgd5df10a">2.9. View commit history</a></li>
+<li><a href="#org225eee3">2.10. Undoing things</a></li>
+<li><a href="#orgfa0e943">2.11. Unstaging a staged file</a></li>
+<li><a href="#org6c32087">2.12. Unmodifying a modified file</a></li>
+<li><a href="#orgef0f0b2">2.13. Working with remote</a></li>
 </ul>
 </li>
-<li><a href="#org93f7e7e">3. Git Branching</a>
+<li><a href="#orgf324784">3. Git Branching</a>
 <ul>
-<li><a href="#orgc47c439">3.1. Create and switch branch</a></li>
-<li><a href="#org71bedcf">3.2. Merge</a></li>
-<li><a href="#orga1806b7">3.3. Merge conflicts</a></li>
-<li><a href="#org456bb3c">3.4. Branch management</a></li>
-<li><a href="#org33bba59">3.5. Remote branch</a></li>
-<li><a href="#org726f98f">3.6. Pushing</a></li>
-<li><a href="#orgef35361">3.7. Tracking branch</a></li>
-<li><a href="#orgab34752">3.8. Pulling</a></li>
-<li><a href="#org2fd8657">3.9. Delete remote branches</a></li>
-<li><a href="#orgc6fc957">3.10. Rebasing</a>
+<li><a href="#org5b30160">3.1. Create and switch branch</a></li>
+<li><a href="#orga968f93">3.2. Merge</a></li>
+<li><a href="#orga47b4e7">3.3. Merge conflicts</a></li>
+<li><a href="#orge4720b7">3.4. Branch management</a></li>
+<li><a href="#org7d8ec60">3.5. Remote branch</a></li>
+<li><a href="#orgc649e10">3.6. Pushing</a></li>
+<li><a href="#orgc4d6836">3.7. Tracking branch</a></li>
+<li><a href="#org04fc766">3.8. Pulling</a></li>
+<li><a href="#org3971b02">3.9. Delete remote branches</a></li>
+<li><a href="#org65be637">3.10. Rebasing</a>
 <ul>
-<li><a href="#org8e1b2e1">Basic rebase</a></li>
-<li><a href="#org9ad60bb">The perils of rebasing</a></li>
-<li><a href="#org25d7bdc">Rebase vs. Merge</a></li>
+<li><a href="#org1239fd1">Basic rebase</a></li>
+<li><a href="#org181a23d">The perils of rebasing</a></li>
+<li><a href="#orgef050be">Rebase vs. Merge</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org7f76212">4. <span class="todo TODO">TODO</span> Git server</a></li>
-<li><a href="#org64375f0">5. <span class="todo TODO">TODO</span> Distributed Git</a></li>
-<li><a href="#org2ad16eb">6. <span class="todo TODO">TODO</span> Github</a></li>
-<li><a href="#org3313a49">7. <span class="todo TODO">TODO</span> Git tools</a>
+<li><a href="#org411c81f">4. <span class="todo TODO">TODO</span> Git server</a></li>
+<li><a href="#orgdf08e0b">5. <span class="todo TODO">TODO</span> Distributed Git</a></li>
+<li><a href="#orgeff304b">6. <span class="todo TODO">TODO</span> Github</a></li>
+<li><a href="#org710fc2b">7. <span class="todo TODO">TODO</span> Git tools</a>
 <ul>
-<li><a href="#orgc1367d2">7.1. <span class="todo TODO">TODO</span> Stashing and cleaning</a></li>
-<li><a href="#org003868c">7.2. <span class="todo TODO">TODO</span> Reset demystified</a></li>
+<li><a href="#orgc4f92a7">7.1. <span class="todo TODO">TODO</span> Stashing and cleaning</a></li>
+<li><a href="#org20cc2e9">7.2. <span class="todo TODO">TODO</span> Reset demystified</a></li>
 </ul>
 </li>
 </ul>
@@ -286,8 +286,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orgbaefe4d" class="outline-2">
-<h2 id="orgbaefe4d"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-orge31cf7a" class="outline-2">
+<h2 id="orge31cf7a"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 This file is for practicing using git and github with a mock project,
@@ -297,11 +297,11 @@ This file is for practicing using git and github with a mock project,
 </div>
 
 
-<div id="outline-container-org0df8b72" class="outline-2">
-<h2 id="org0df8b72"><span class="section-number-2">2</span> Git Basics</h2>
+<div id="outline-container-org6c37406" class="outline-2">
+<h2 id="org6c37406"><span class="section-number-2">2</span> Git Basics</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-org76b040e" class="outline-3">
-<h3 id="org76b040e"><span class="section-number-3">2.1</span> Git configuration</h3>
+</div><div id="outline-container-org33fccdf" class="outline-3">
+<h3 id="org33fccdf"><span class="section-number-3">2.1</span> Git configuration</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Use <code>git config --list</code></li>
@@ -311,8 +311,8 @@ This file is for practicing using git and github with a mock project,
 </div>
 </div>
 
-<div id="outline-container-org1f72b35" class="outline-3">
-<h3 id="org1f72b35"><span class="section-number-3">2.2</span> Get help</h3>
+<div id="outline-container-org0884583" class="outline-3">
+<h3 id="org0884583"><span class="section-number-3">2.2</span> Get help</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li><code>git help &lt;verb&gt;</code> or <code>git &lt;verb&gt; --help</code></li>
@@ -320,8 +320,8 @@ This file is for practicing using git and github with a mock project,
 </div>
 </div>
 
-<div id="outline-container-orgcba59cb" class="outline-3">
-<h3 id="orgcba59cb"><span class="section-number-3">2.3</span> Create a git repository</h3>
+<div id="outline-container-orgd5db534" class="outline-3">
+<h3 id="orgd5db534"><span class="section-number-3">2.3</span> Create a git repository</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>Use <code>git init</code></li>
@@ -330,8 +330,8 @@ This file is for practicing using git and github with a mock project,
 </div>
 </div>
 
-<div id="outline-container-org2683af5" class="outline-3">
-<h3 id="org2683af5"><span class="section-number-3">2.4</span> Check status</h3>
+<div id="outline-container-orgbff22c5" class="outline-3">
+<h3 id="orgbff22c5"><span class="section-number-3">2.4</span> Check status</h3>
 <div class="outline-text-3" id="text-2-4">
 <ul class="org-ul">
 <li><code>git status</code></li>
@@ -341,8 +341,8 @@ This file is for practicing using git and github with a mock project,
 </div>
 </div>
 
-<div id="outline-container-orgb92413b" class="outline-3">
-<h3 id="orgb92413b"><span class="section-number-3">2.5</span> Stage files and changes</h3>
+<div id="outline-container-org1761f3e" class="outline-3">
+<h3 id="org1761f3e"><span class="section-number-3">2.5</span> Stage files and changes</h3>
 <div class="outline-text-3" id="text-2-5">
 <ul class="org-ul">
 <li><code>git add &lt;filename&gt;</code></li>
@@ -352,8 +352,8 @@ This file is for practicing using git and github with a mock project,
 </div>
 </div>
 
-<div id="outline-container-org8becb03" class="outline-3">
-<h3 id="org8becb03"><span class="section-number-3">2.6</span> Commit</h3>
+<div id="outline-container-org0088b34" class="outline-3">
+<h3 id="org0088b34"><span class="section-number-3">2.6</span> Commit</h3>
 <div class="outline-text-3" id="text-2-6">
 <ul class="org-ul">
 <li><code>git commit -m "message"</code></li>
@@ -362,8 +362,8 @@ This file is for practicing using git and github with a mock project,
 </div>
 </div>
 
-<div id="outline-container-orga6a0d99" class="outline-3">
-<h3 id="orga6a0d99"><span class="section-number-3">2.7</span> Remove files</h3>
+<div id="outline-container-org5f84764" class="outline-3">
+<h3 id="org5f84764"><span class="section-number-3">2.7</span> Remove files</h3>
 <div class="outline-text-3" id="text-2-7">
 <ul class="org-ul">
 <li><code>git rm filename</code>: remove the file from both working directory and
@@ -374,8 +374,8 @@ not in working directory.</li>
 </div>
 </div>
 
-<div id="outline-container-org9500975" class="outline-3">
-<h3 id="org9500975"><span class="section-number-3">2.8</span> Move and rename file</h3>
+<div id="outline-container-org7073db7" class="outline-3">
+<h3 id="org7073db7"><span class="section-number-3">2.8</span> Move and rename file</h3>
 <div class="outline-text-3" id="text-2-8">
 <ul class="org-ul">
 <li><code>git mv file_from file_to</code>: file<sub>from</sub> must have been staged.</li>
@@ -383,8 +383,8 @@ not in working directory.</li>
 </div>
 </div>
 
-<div id="outline-container-orgee433d9" class="outline-3">
-<h3 id="orgee433d9"><span class="section-number-3">2.9</span> View commit history</h3>
+<div id="outline-container-orgd5df10a" class="outline-3">
+<h3 id="orgd5df10a"><span class="section-number-3">2.9</span> View commit history</h3>
 <div class="outline-text-3" id="text-2-9">
 <ul class="org-ul">
 <li><code>git log</code></li>
@@ -396,8 +396,8 @@ pretty format with a tree-like graph.</li>
 </div>
 </div>
 
-<div id="outline-container-orgfc8721b" class="outline-3">
-<h3 id="orgfc8721b"><span class="section-number-3">2.10</span> Undoing things</h3>
+<div id="outline-container-org225eee3" class="outline-3">
+<h3 id="org225eee3"><span class="section-number-3">2.10</span> Undoing things</h3>
 <div class="outline-text-3" id="text-2-10">
 <ul class="org-ul">
 <li><code>git commit --amend</code></li>
@@ -405,8 +405,8 @@ pretty format with a tree-like graph.</li>
 </div>
 </div>
 
-<div id="outline-container-org5e23122" class="outline-3">
-<h3 id="org5e23122"><span class="section-number-3">2.11</span> Unstaging a staged file</h3>
+<div id="outline-container-orgfa0e943" class="outline-3">
+<h3 id="orgfa0e943"><span class="section-number-3">2.11</span> Unstaging a staged file</h3>
 <div class="outline-text-3" id="text-2-11">
 <ul class="org-ul">
 <li><code>git reset HEAD file</code></li>
@@ -414,8 +414,8 @@ pretty format with a tree-like graph.</li>
 </div>
 </div>
 
-<div id="outline-container-orgb3ea65f" class="outline-3">
-<h3 id="orgb3ea65f"><span class="section-number-3">2.12</span> Unmodifying a modified file</h3>
+<div id="outline-container-org6c32087" class="outline-3">
+<h3 id="org6c32087"><span class="section-number-3">2.12</span> Unmodifying a modified file</h3>
 <div class="outline-text-3" id="text-2-12">
 <ul class="org-ul">
 <li><code>git checkout -- file</code>.</li>
@@ -423,8 +423,8 @@ pretty format with a tree-like graph.</li>
 </div>
 </div>
 
-<div id="outline-container-orga58978a" class="outline-3">
-<h3 id="orga58978a"><span class="section-number-3">2.13</span> Working with remote</h3>
+<div id="outline-container-orgef0f0b2" class="outline-3">
+<h3 id="orgef0f0b2"><span class="section-number-3">2.13</span> Working with remote</h3>
 <div class="outline-text-3" id="text-2-13">
 <ul class="org-ul">
 <li><code>git remote -v</code> show all remote repository with URL</li>
@@ -441,11 +441,11 @@ pretty format with a tree-like graph.</li>
 </div>
 
 
-<div id="outline-container-org93f7e7e" class="outline-2">
-<h2 id="org93f7e7e"><span class="section-number-2">3</span> Git Branching</h2>
+<div id="outline-container-orgf324784" class="outline-2">
+<h2 id="orgf324784"><span class="section-number-2">3</span> Git Branching</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-orgc47c439" class="outline-3">
-<h3 id="orgc47c439"><span class="section-number-3">3.1</span> Create and switch branch</h3>
+</div><div id="outline-container-org5b30160" class="outline-3">
+<h3 id="org5b30160"><span class="section-number-3">3.1</span> Create and switch branch</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li><code>git branch [branch-name]</code></li>
@@ -458,8 +458,8 @@ of committing and branching.</li>
 </div>
 </div>
 
-<div id="outline-container-org71bedcf" class="outline-3">
-<h3 id="org71bedcf"><span class="section-number-3">3.2</span> Merge</h3>
+<div id="outline-container-orga968f93" class="outline-3">
+<h3 id="orga968f93"><span class="section-number-3">3.2</span> Merge</h3>
 <div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li><code>git merge [branch-name]</code>.
@@ -472,8 +472,8 @@ of committing and branching.</li>
 </div>
 </div>
 
-<div id="outline-container-orga1806b7" class="outline-3">
-<h3 id="orga1806b7"><span class="section-number-3">3.3</span> Merge conflicts</h3>
+<div id="outline-container-orga47b4e7" class="outline-3">
+<h3 id="orga47b4e7"><span class="section-number-3">3.3</span> Merge conflicts</h3>
 <div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li>Merge conflicts happens when two branches have work on the same
@@ -485,8 +485,8 @@ lines of a file.</li>
 </div>
 </div>
 
-<div id="outline-container-org456bb3c" class="outline-3">
-<h3 id="org456bb3c"><span class="section-number-3">3.4</span> Branch management</h3>
+<div id="outline-container-orge4720b7" class="outline-3">
+<h3 id="orge4720b7"><span class="section-number-3">3.4</span> Branch management</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 What follows is one typical workflow with branches:
@@ -509,8 +509,8 @@ have been merged or haven't.</li>
 </div>
 </div>
 
-<div id="outline-container-org33bba59" class="outline-3">
-<h3 id="org33bba59"><span class="section-number-3">3.5</span> Remote branch</h3>
+<div id="outline-container-org7d8ec60" class="outline-3">
+<h3 id="org7d8ec60"><span class="section-number-3">3.5</span> Remote branch</h3>
 <div class="outline-text-3" id="text-3-5">
 <ul class="org-ul">
 <li><code>git ls-remote [remote-name]</code> and <code>git remote show [remote-name]</code>
@@ -526,8 +526,8 @@ branch.</li>
 </div>
 </div>
 
-<div id="outline-container-org726f98f" class="outline-3">
-<h3 id="org726f98f"><span class="section-number-3">3.6</span> Pushing</h3>
+<div id="outline-container-orgc649e10" class="outline-3">
+<h3 id="orgc649e10"><span class="section-number-3">3.6</span> Pushing</h3>
 <div class="outline-text-3" id="text-3-6">
 <ul class="org-ul">
 <li><code>git push [remote] [branch]</code></li>
@@ -542,8 +542,8 @@ master branch.</li>
 </div>
 </div>
 
-<div id="outline-container-orgef35361" class="outline-3">
-<h3 id="orgef35361"><span class="section-number-3">3.7</span> Tracking branch</h3>
+<div id="outline-container-orgc4d6836" class="outline-3">
+<h3 id="orgc4d6836"><span class="section-number-3">3.7</span> Tracking branch</h3>
 <div class="outline-text-3" id="text-3-7">
 <ul class="org-ul">
 <li>Tracking branches are local branches that track upstream remote
@@ -563,8 +563,8 @@ branch, which is automatically set as the local tracking branch.</li>
 </div>
 </div>
 
-<div id="outline-container-orgab34752" class="outline-3">
-<h3 id="orgab34752"><span class="section-number-3">3.8</span> Pulling</h3>
+<div id="outline-container-org04fc766" class="outline-3">
+<h3 id="org04fc766"><span class="section-number-3">3.8</span> Pulling</h3>
 <div class="outline-text-3" id="text-3-8">
 <ul class="org-ul">
 <li><code>git pull</code> is <code>git fetch</code> + <code>git merge</code>.</li>
@@ -573,8 +573,8 @@ branch, which is automatically set as the local tracking branch.</li>
 </div>
 </div>
 
-<div id="outline-container-org2fd8657" class="outline-3">
-<h3 id="org2fd8657"><span class="section-number-3">3.9</span> Delete remote branches</h3>
+<div id="outline-container-org3971b02" class="outline-3">
+<h3 id="org3971b02"><span class="section-number-3">3.9</span> Delete remote branches</h3>
 <div class="outline-text-3" id="text-3-9">
 <ul class="org-ul">
 <li><code>git push [remote] --delete [branch]</code></li>
@@ -582,12 +582,12 @@ branch, which is automatically set as the local tracking branch.</li>
 </div>
 </div>
 
-<div id="outline-container-orgc6fc957" class="outline-3">
-<h3 id="orgc6fc957"><span class="section-number-3">3.10</span> Rebasing</h3>
+<div id="outline-container-org65be637" class="outline-3">
+<h3 id="org65be637"><span class="section-number-3">3.10</span> Rebasing</h3>
 <div class="outline-text-3" id="text-3-10">
-</div><div id="outline-container-org8e1b2e1" class="outline-4">
-<h4 id="org8e1b2e1">Basic rebase</h4>
-<div class="outline-text-4" id="text-org8e1b2e1">
+</div><div id="outline-container-org1239fd1" class="outline-4">
+<h4 id="org1239fd1">Basic rebase</h4>
+<div class="outline-text-4" id="text-org1239fd1">
 <p>
 A typical workflow: See Figures 3-27 to 3-30
 </p>
@@ -600,9 +600,9 @@ A typical workflow: See Figures 3-27 to 3-30
 </div>
 </div>
 
-<div id="outline-container-org9ad60bb" class="outline-4">
-<h4 id="org9ad60bb">The perils of rebasing</h4>
-<div class="outline-text-4" id="text-org9ad60bb">
+<div id="outline-container-org181a23d" class="outline-4">
+<h4 id="org181a23d">The perils of rebasing</h4>
+<div class="outline-text-4" id="text-org181a23d">
 <p>
 <b>Do not rebase commits that exist outside your repository.</b>
 Excerpt From: Scott Chacon, Ben Straub. “Pro Git.” iBooks.
@@ -610,9 +610,9 @@ Excerpt From: Scott Chacon, Ben Straub. “Pro Git.” iBooks.
 </div>
 </div>
 
-<div id="outline-container-org25d7bdc" class="outline-4">
-<h4 id="org25d7bdc">Rebase vs. Merge</h4>
-<div class="outline-text-4" id="text-org25d7bdc">
+<div id="outline-container-orgef050be" class="outline-4">
+<h4 id="orgef050be">Rebase vs. Merge</h4>
+<div class="outline-text-4" id="text-orgef050be">
 <p>
 Which is better, rebase or merge, depends on how you view the commit
 history.
@@ -632,33 +632,33 @@ view.</dd>
 
 
 
-<div id="outline-container-org7f76212" class="outline-2">
-<h2 id="org7f76212"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> Git server</h2>
+<div id="outline-container-org411c81f" class="outline-2">
+<h2 id="org411c81f"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> Git server</h2>
 </div>
 
-<div id="outline-container-org64375f0" class="outline-2">
-<h2 id="org64375f0"><span class="section-number-2">5</span> <span class="todo TODO">TODO</span> Distributed Git</h2>
+<div id="outline-container-orgdf08e0b" class="outline-2">
+<h2 id="orgdf08e0b"><span class="section-number-2">5</span> <span class="todo TODO">TODO</span> Distributed Git</h2>
 </div>
 
-<div id="outline-container-org2ad16eb" class="outline-2">
-<h2 id="org2ad16eb"><span class="section-number-2">6</span> <span class="todo TODO">TODO</span> Github</h2>
+<div id="outline-container-orgeff304b" class="outline-2">
+<h2 id="orgeff304b"><span class="section-number-2">6</span> <span class="todo TODO">TODO</span> Github</h2>
 </div>
 
-<div id="outline-container-org3313a49" class="outline-2">
-<h2 id="org3313a49"><span class="section-number-2">7</span> <span class="todo TODO">TODO</span> Git tools</h2>
+<div id="outline-container-org710fc2b" class="outline-2">
+<h2 id="org710fc2b"><span class="section-number-2">7</span> <span class="todo TODO">TODO</span> Git tools</h2>
 <div class="outline-text-2" id="text-7">
-</div><div id="outline-container-orgc1367d2" class="outline-3">
-<h3 id="orgc1367d2"><span class="section-number-3">7.1</span> <span class="todo TODO">TODO</span> Stashing and cleaning</h3>
+</div><div id="outline-container-orgc4f92a7" class="outline-3">
+<h3 id="orgc4f92a7"><span class="section-number-3">7.1</span> <span class="todo TODO">TODO</span> Stashing and cleaning</h3>
 </div>
-<div id="outline-container-org003868c" class="outline-3">
-<h3 id="org003868c"><span class="section-number-3">7.2</span> <span class="todo TODO">TODO</span> Reset demystified</h3>
+<div id="outline-container-org20cc2e9" class="outline-3">
+<h3 id="org20cc2e9"><span class="section-number-3">7.2</span> <span class="todo TODO">TODO</span> Reset demystified</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: 2017-01-20 Fri 00:00</p>
 <p class="author">Author: Zheng Tian</p>
-<p class="date">Created: 2017-02-09 Thu 22:19</p>
+<p class="date">Created: 2017-02-09 Thu 22:27</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

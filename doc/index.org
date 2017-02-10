@@ -1,5 +1,6 @@
 #+OPTIONS: toc:t
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/worg.css" />
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/worg.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/readtheorg.css" />
 
 # #+SETUPFILE: theme-bigblow.setup
 

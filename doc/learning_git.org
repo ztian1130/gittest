@@ -4,7 +4,8 @@
 #+DATE: [2017-01-20 Fri]
 #+OPTIONS: H:3 num:2 toc:t
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/worg.css" />
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/worg.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/readtheorg.css" />
 
 
 * Introduction
