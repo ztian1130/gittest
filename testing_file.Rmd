@@ -1,6 +1,7 @@
 ---
 title: "A Minimal Example"
 output: html_document
+author: zngtian, ztian1130
 ---
 
 We examine the relationship between speed and stopping
