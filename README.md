@@ -4,4 +4,4 @@ I follow the book of Pro Git.
 
 I move the repo into Windows 10.
 
-Make more changes
+Change editor to Notepad++.
