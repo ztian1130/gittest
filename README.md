@@ -4,4 +4,4 @@ I follow the book of Pro Git.
 
 I move the repo into Windows 10.
 
-Change editor to Notepad++.
+Change editor to Notepad++. Try again to push. 
